@@ -1,0 +1,9 @@
+caracteristica,hallazgo,cifra,filas_afectadas
+Completitud,"Filas sin fecha, todas del depósito Whse_A","11.239 filas: 1,1 % del total y 7,3 % de Whse_A",11239
+Exactitud,Demanda negativa: probables devoluciones o correcciones,"10.469 filas (1,0 %)",10469
+Exactitud,Pedidos de cantidad cero,"28.681 filas (2,7 %)",28681
+Consistencia,"La demanda está guardada como texto, con negativos entre paréntesis y espacios al final",10.469 valores entre paréntesis; 1.038.106 con espacios,1038106
+Consistencia,Cada producto pertenece a una sola categoría,0 productos con más de una,0
+Actualidad,Años incompletos en los extremos,2011: 640 filas; 2017: 53 (hasta el 09/01/2017),693
+Credibilidad,El archivo tiene exactamente el tope de filas de Excel: pudo quedar cortado,"1.048.575 filas; 2016 tiene 11,0 % menos filas que el promedio 2012-2015",1048575
+Trazabilidad,"Sin número de pedido, cliente ni hora: no se distingue un duplicado de dos pedidos iguales",122.423 filas idénticas a otra,122423

@@ -1,0 +1,10 @@
+id,factor,escenario,mejor_referencia,wape_referencia,mejor_ml,wape_ml,mejora,ganados,vale_la_pena,wape_ets
+base,Base,"Base: mensual, historia completa, sin faltantes",Media móvil 12m,0.38418375591068576,LightGBM,0.3413006872540823,0.11162124373257687,6,True,0.3979117825654974
+historia_6,Historización,6 meses de historia,Media móvil 12m,0.3694928819918579,LightGBM,0.35571031189336827,0.03730131423423022,4,False,
+historia_12,Historización,12 meses de historia,Media móvil 12m,0.38418375591068576,LightGBM,0.34150187841372226,0.11109755902039276,6,True,0.37568199228538385
+historia_24,Historización,24 meses de historia,Media móvil 12m,0.38418375591068576,LightGBM,0.3449986496780528,0.10199573935588935,6,True,0.3794287022744425
+historia_36,Historización,36 meses de historia,Media móvil 12m,0.38418375591068576,LightGBM,0.34410698909102205,0.10431666150137975,6,True,0.39565814771835167
+faltantes_5,Calidad,5 % de registros perdidos,Media móvil 12m,0.37526803250381563,LightGBM,0.34673860229359027,0.07602414205088304,5,True,0.3823700929804013
+faltantes_15,Calidad,15 % de registros perdidos,Media móvil 12m,0.3839139875662794,LightGBM,0.3762671452421023,0.01991811335828697,4,False,0.38934390264687285
+faltantes_30,Calidad,30 % de registros perdidos,Media móvil 12m,0.4440701842006109,Ridge,0.46281111011545617,-0.0422026215261031,2,False,0.4423371548534571
+semanal,Frecuencia,Datos semanales,Croston SBA,0.3723707667741498,LightGBM,0.3556045417132599,0.04502562111987396,6,False,0.3944984838878513

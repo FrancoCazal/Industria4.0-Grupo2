@@ -1,0 +1,6 @@
+paso,filas,volumen_positivo,comentario
+Demanda de texto a número,1048575,5124597821,10.469 valores entre paréntesis pasan a negativos
+Fecha de texto a fecha,1048575,5124597821,formato año/mes/día; las vacías quedan como nulas
+Descarte de filas sin fecha,1037336,5119013081,"se pierde el 0,11 % del volumen"
+Recorte a 2012-2016,1036643,5110781174,salen 693 filas de 2011 y 2017
+Devoluciones aparte,1036643,5110781174,"14.733.896 unidades devueltas, el 0,29 % de la demanda"

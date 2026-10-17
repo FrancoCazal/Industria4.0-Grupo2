@@ -1,0 +1,15 @@
+COMERCIAL. En este dataset, una empresa puede pasar de BI a ML de demanda cuando tiene al menos 12
+meses de historia continua y registra prácticamente todas sus ventas: con un 5 % de registros
+perdidos el ML todavía vale la pena, con un 15 % ya no. En frecuencia, registrar por semana no
+mejora el pronóstico del mes: alcanza con la frecuencia de la decisión, que para planificar
+producción es mensual. Por debajo de eso, la mejor herramienta es una media móvil bien elegida, que
+ya consigue el 77 % de la mejora del ML sobre el naive estacional.
+
+OPERATIVA. Para predecir fallas el paso previo es medir la planta: sensores y un registro de cada
+falla. Sin eso, el nivel alcanzable es el mantenimiento preventivo. El anexo del notebook 02 muestra
+por qué, con eventos raros, el accuracy no sirve para evaluar.
+
+HERRAMIENTAS. Todo el camino se hizo sin licencias: Python, pandas, scikit-learn, LightGBM y
+statsforecast, en Colab o Jupyter. Para ver los datos, Looker Studio, Metabase o Superset tampoco
+cobran licencia. El costo real no es el software: es la persona que sabe usarlo y el registro
+disciplinado de los datos.

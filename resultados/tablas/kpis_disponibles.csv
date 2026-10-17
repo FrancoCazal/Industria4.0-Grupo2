@@ -1,0 +1,9 @@
+kpi,disponible,por qué
+"Ventas por producto, depósito y mes",Sí,En unidades. Sin precio no hay ventas en guaraníes
+Margen bruto,No,Falta el precio y el costo de lo vendido
+Rotación de inventario,No,Falta el inventario
+Días de cobertura,No,Falta el stock disponible
+Tasa de quiebre de stock,No,Falta el stock: un mes en cero no dice si no hubo demanda o no hubo producto
+Nivel de servicio,No,Faltan las entregas a tiempo
+Precisión del pronóstico,Sí,Se mide en el notebook 02
+"KPIs operativos (OEE, MTBF, paradas)",No,El dataset es comercial; no hay registros de planta

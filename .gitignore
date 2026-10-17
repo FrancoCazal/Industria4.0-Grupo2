@@ -1,0 +1,17 @@
+# Entorno
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Datos: el crudo se descarga con kagglehub y los procesados se regeneran con 01.
+data/raw/
+data/processed/
+
+# Cachés de los notebooks 02 y 03 (se regeneran con RECALCULAR = True)
+resultados/cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
