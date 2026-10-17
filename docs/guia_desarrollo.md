@@ -13,7 +13,7 @@ pipeline, el modelo y el experimento de madurez.
 
 | Entra | Queda fuera |
 |---|---|
-| Ingesta, limpieza, calidad y EDA del dataset | El archivo `.pbix` de Power BI (lo arma Sofi con las salidas del repo) |
+| Ingesta, limpieza, calidad y EDA del dataset | El archivo `.pbix` de Power BI (se arma aparte con las salidas del repo) |
 | Modelos de pronóstico, validación y métricas | El informe técnico, las slides y la ficha de caso |
 | Experimento de madurez (historia, faltantes, frecuencia) | Cualquier cosa de Blindside |
 | Tablas y figuras para el informe, las slides y Power BI | Despliegue, API o interfaz |
