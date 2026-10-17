@@ -76,9 +76,9 @@ Industria40/
 │   ├── backtest.py              origen móvil y escenarios del experimento
 │   └── graficos.py              estilo común de las figuras
 ├── notebooks/
-│   ├── 01_limpieza_eda.ipynb            Abi
-│   ├── 02_modelo_pronostico.ipynb       Franco
-│   └── 03_experimento_madurez.ipynb     Franco
+│   ├── 01_limpieza_eda.ipynb            escalón 2: datos
+│   ├── 02_modelo_pronostico.ipynb       escalón 3: modelo
+│   └── 03_experimento_madurez.ipynb     escalón 3 y cierre: la respuesta
 ├── data/
 │   ├── raw/                     CSV descargado (no se versiona)
 │   └── processed/               salidas de 01, entradas de 02, 03 y Power BI
@@ -106,7 +106,7 @@ Técnicamente sí, pero se separa en tres por cuatro razones:
 
 Regla de los notebooks: el razonamiento, los gráficos y las conclusiones viven en el notebook; la
 lógica reutilizable vive en `src/demanda/`. La limpieza queda escrita **dentro** de `01` porque es
-lo que Abi muestra en vivo, y `datos.py` tiene la misma limpieza como función para que `03` la
+lo que se muestra en vivo, y `datos.py` tiene la misma limpieza como función para que `03` la
 pueda repetir sobre datos degradados. Un `assert` en `01` verifica que las dos den el mismo
 resultado.
 
@@ -258,7 +258,7 @@ cobertura real se mide en la prueba de 2016 y se informa aunque no llegue al 80 
 - El ABC y la clase de intermitencia se calculan con toda la serie y por eso **solo segmentan
   resultados**; nunca son variables.
 
-## 7. Notebook 01 · Limpieza y EDA (Abi)
+## 7. Notebook 01 · Limpieza y EDA
 
 Responde: ¿qué datos tenemos, qué tan buenos son y qué ve la empresa con ellos?
 
@@ -279,11 +279,11 @@ Responde: ¿qué datos tenemos, qué tan buenos son y qué ve la empresa con ell
    - intermitencia ADI/CV² (Syntetos y Boylan, 2005), en dispersión con los cuatro cuadrantes;
    - distribución del tamaño de pedido (escala logarítmica);
    - altas y bajas de series en el tiempo.
-7. **Qué necesita la empresa para tener BI**: la línea de cierre de Abi, con las cifras del
-   notebook.
+7. **Qué necesita la empresa para tener BI**: la línea de cierre del escalón 2, con las cifras
+   del notebook.
 8. **Exportación** a `data/processed/` y `resultados/powerbi/`.
 
-## 8. Notebook 02 · Modelo de pronóstico (Franco)
+## 8. Notebook 02 · Modelo de pronóstico
 
 Responde: con todos los datos disponibles, ¿el ML le gana a los métodos simples, y por cuánto?
 
@@ -308,7 +308,7 @@ Responde: con todos los datos disponibles, ¿el ML le gana a los métodos simple
 Los resultados del backtest se guardan en `resultados/tablas/`. Una bandera `RECALCULAR` al inicio
 permite releerlos en la demo sin volver a entrenar.
 
-## 9. Notebook 03 · Experimento de madurez (Franco)
+## 9. Notebook 03 · Experimento de madurez
 
 Responde: ¿desde qué nivel de historia, calidad y frecuencia vale la pena el ML?
 

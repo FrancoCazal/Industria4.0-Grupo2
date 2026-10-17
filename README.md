@@ -17,11 +17,14 @@ de un fabricante con la misma estructura (planta, depósitos regionales y muchas
 
 Se corren en orden. Cada uno lee lo que escribió el anterior.
 
-| Notebook | Responsable | Qué responde | Tiempo |
-|---|---|---|---|
-| `01_limpieza_eda` | Abi | Qué datos hay, qué tan buenos son y qué ve la empresa con ellos | ~1 min |
-| `02_modelo_pronostico` | Franco | Con todos los datos, si el ML le gana a los métodos simples y por cuánto | ~15 min, o ~1 min con la caché |
-| `03_experimento_madurez` | Franco | Desde qué historia, calidad y frecuencia vale la pena el ML | ~1 h, o ~1 min con la caché |
+Los tres los muestra Franco en la exposición. El dashboard de Power BI se arma con las tablas de
+`resultados/powerbi/`.
+
+| Notebook | Qué responde | Tiempo |
+|---|---|---|
+| `01_limpieza_eda` | Qué datos hay, qué tan buenos son y qué ve la empresa con ellos | ~1 min |
+| `02_modelo_pronostico` | Con todos los datos, si el ML le gana a los métodos simples y por cuánto | ~15 min, o ~1 min con la caché |
+| `03_experimento_madurez` | Desde qué historia, calidad y frecuencia vale la pena el ML | ~1 h, o ~1 min con la caché |
 
 `02` y `03` tienen una bandera `RECALCULAR` al principio. En `False` releen los resultados
 guardados en `resultados/cache/`, que es lo que conviene para una demo en vivo. Al subir la carpeta
